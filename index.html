@@ -6,30 +6,44 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            background-color: #fffdea;
+            background-color: #fffef8;
         }
-        .homeContent {
-            display: flex; /* 使用flex布局 */
-            flex-direction: column; /* 纵向排列 */
-            align-items: center; /* 居中对齐 */
-            padding-top: 80px; /* 上边距，避免被导航条遮挡 */
-            padding: 30px; /* 增加内边距 */
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+
        .image-with-text {
-       display: grid;
-       grid-template-columns: auto 1fr; 
-       gap: 10px; }
+             display: grid;
+             grid-template-columns: auto 1fr; 
+             margin: auto auto; /* 上下外边距为20px，左右外边距自动，使容器水平居中 */
+             gap: 10px; }
+
+       .text-center {
+            text-align: center; /* 水平居中 */
+            width: auto; /* 定义容器宽度 */
+            /*border: 1px solid #000;*/
+            margin: auto auto; /* 上下外边距为20px，左右外边距自动，使容器水平居中 */
+        }
+
+        .Pic {
+            max-width: 100%; /* 最大宽度为100% */
+            border-radius: 50%; /* 圆形头像 */
+            height: auto; /* 高度自适应 */
+            margin-top: 20px; /* 上边距 */
+            text-align: center; /* 水平居中 */
+        }
+
     </style>
 </head>
 <body>
-    <div class="image-with-text">
-    <img src="pictures\provide.jpg" alt="示例图片" width="50">
-    <h2>伍亮宇的主页</h2></div>
+    <section>
+    <div class="Pic">
+        <img src="pictures/provide.jpg" alt="头像" class="Pic" width="50">
+    </section>
+
+    <section>
+    <div class="text-center">
+    <p1>我的名字是ryousuke，是一位初中生。</p1>
+    </section>
+
     <hr>
 
-        <h2>这是一个不知道要写啥的网页，随便看看吧（反正也没啥可看的）</h2>
-</body></html>
+</body>
+</html>
